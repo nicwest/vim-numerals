@@ -12,7 +12,6 @@ let g:loaded_numerals = 1
 
 " Private functions: {{{1
 function! s:Numerals(calc, roman) abort
-  echo "ROMAN THINGS"
   return a:roman ? numerals#calculate(a:calc) : numerals#calculate_roman(a:calc)
 endfunction
 
